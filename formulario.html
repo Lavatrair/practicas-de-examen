@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formulario.php" method="post">
+    <h1>Formulario de Informacion</h1>
+    <fieldset>
+        <legend>Sus datos</legend>
+        <p>
+        <label for="">Nombre y apellidos</label>
+        <input type="text" id="nombre-apellidos" maxlength="50" name="nombre-apellidos">
+        </p>
+
+        <p>
+        <label for="">Contraseña</label>
+        <input type="password" id="contrase" name="contrase">
+        </p>
+
+        <p>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" maxlength="50" name="usuario">
+        </p>
+
+        <p>
+            <label for="">Nivel:</label>
+        </p>
+        <p>
+            <input type="radio" name="nivel" id="Profesional"> 
+            <label for="profesional">profesional</label>
+        </p>
+
+        <p>
+            <input type="radio" name="nivel" id="avanzado"> 
+            <label for="avanzado">Avanzado</label>
+        </p>
+
+        <p>
+            <input type="radio" name="nivel" id="Principiante"> 
+            <label for="Principiante">Principiante</label>
+        </p>
+    </fieldset>
+    <p>
+        <label for="nacionalidad">Nacionalidad</label>
+    <select name="nacionalidad" id="nacionalidad">
+        <option value="esp">España</option>
+        <option value="fr" selected>Francia</option>
+        <option value="EU">Estados Unidos</option>
+    </select>
+    </p>
+
+    <p>
+        <label for="">Descripcion</label>
+        <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea>
+    </p>
+
+    <input type="checkbox" name="Deseo recibir informacion sobre novedades y ofertas" checked> 
+    Deseo recibir informacion sobre novedades y ofertas
+    <p>
+        <input type="checkbox" name="Declaro haber leido y aceptar las condiciones generales del programa 
+        ya normativa sobre proteccion de datos"> Declaro haber leido y aceptar las condiciones generales del programa 
+        ya normativa sobre proteccion de datos
+    </p>
+
+    <label for="foto">Adjuntar foto</label>
+    <input type="submit" value="Seleccionar archivo">
+    
+    <p>
+     <input type="submit" value="Enviar">
+      <input type="submit" value="Borrar datos">
+      </p>
+    </form>
+</body>
+</html>
